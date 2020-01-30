@@ -1,3 +1,368 @@
+
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+body {
+	justify-content: center;
+}
+
+.main-content {
+	width: 90%;
+}
+
+header {
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	text-align: space-between;
+}
+
+.nav_bar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px 0px 30px 0px;
+}
+
+.nav_bar a {
+	text-decoration: none;
+}
+
+.logo {
+	margin-top: 20px;
+	margin-left: 80px;
+	vertical-align: middle;
+}
+
+.parent {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+
+.twins {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 75px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+button {
+	border: 1px solid black;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 16px;
+	color: rgb(7, 7, 7);
+	width: 50%;
+}
+
+.topimg {
+	padding: 0px 0px 50px;
+}
+.top-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.feat {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 30%;
+	font-size: 25px;
+}
+
+.feat p {
+	width: 90%;
+}
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5%;
+	margin-right: 5%;
+	width: 30%;
+	font-size: 25px;
+}
+
+.about p {
+	width: 90%;
+}
+.middle-img {
+	margin-top: 5%;
+	width: 100%;
+}
+
+.bottom-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 5%;
+	font-size: 20px;
+}
+
+.services p {
+	float: middle;
+	width: 100%;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 5%;
+	font-size: 20px;
+}
+
+.product p {
+	float: middle;
+	width: 100%;
+}
+
+.vision {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+	font-size: 20px;
+}
+
+.vision p {
+	float: middle;
+	width: 100%
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 5%;
+	width: 10%;
+
+}
+
+.contact p {
+	line-height: 50px
+}
+
+
+
+/* MEDIA QUERY @ 800PX */
+
+
+
+@media (max-width: 800px ) {
+	.nav_bar {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+
+/* MEDIA QUERY @ 500PX */
+
+
+
+@media (max-width: 500px) {
+	.nav_bar {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.nav_bar .logo {
+	
+	}
+	.topimg {
+		display: none;
+	}
+	.top-content {
+		display: flex;
+		flex-direction:column;
+		justify-content: flex-start;
+	}
+	.top-content .feat {
+		display: flex;
+		justify-content: flex-start;
+	}
+	}
+
+
+
+/* SERVICES STYLING */
+
+
+
+
+body {
+	justify-content: center;
+}
+
+.main-content {
+	width: 90%;
+}
+
+.top-group {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+.top-group h1 {
+	font-size: 40px;
+}
+.box-content {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.box-content .top {	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.box-content .top .top-left {
+	border: solid black 1px;
+	background: lightgray;
+	margin: 20px 40px 20px 0px;
+	padding: 20px 20px 20px 20px;
+}
+
+.box-content .top .top-left p {
+	padding: 0px 0px 20px 0px;
+}
+
+
+.box-content .top .top-right {
+	border: solid black 1px;
+	background: lightgray;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 20px 20px 20px;
+}
+
+.box-content .top .top-right p {
+	padding: 0px 0px 20px 0px;
+}
+
+
+.box-content .middle {
+	display: flex;
+	
+}
+.box-content .middle .middle-left {
+	border: solid black 1px;
+	background: lightgray;
+	margin: 20px 40px 20px 0px;
+	padding: 20px 20px 20px 20px;
+}
+
+.box-content .middle .middle-left p {
+	padding: 0px 0px 20px 0px;
+}
+
+.box-content .middle .middle-right {
+	border: solid black 1px;
+	background: lightgray;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 20px 20px 20px;
+}
+
+.box-content .middle .middle-right p {
+	padding: 0px 0px 20px 0px;
+}
+
+
+.box-content .bottom {
+	display: flex;
+	
+}
+.box-content .bottom .bottom-left {
+	border: solid black 1px;
+	background: lightgray;
+	margin: 20px 40px 20px 0px;
+	padding: 20px 20px 20px 20px;
+}
+
+.box-content .bottom .bottom-left p {
+	padding: 0px 0px 20px 0px;
+}
+
+.box-content .bottom .bottom-right {
+	border: solid black 1px;
+	background: lightgray;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 20px 20px 20px;
+}
+
+.box-content .bottom .bottom-right p {
+	padding: 0px 0px 20px 0px;
+}
+
+.bottom-group {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bottom-group .bottom-group-left p {
+	margin-right: 30px;
+}
+
+.bottom-group .bottom-group-left {
+	display: flex;
+	flex-direction: column;
+	margin-right: 40%;
+}
+
+.bottom-group .bottom-group-left p {
+	
+	margin: 15px;
+}
+
+li {
+	margin-left: 3%;
+	line-height: 30px;
+}
+
+
+footer {
+	text-align: center;
+	margin: 15% 15% 2% 15%;
+}
 
 
