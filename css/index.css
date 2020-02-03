@@ -178,46 +178,6 @@ button {
 
 
 
-/* MEDIA QUERY @ 800PX */
-
-
-
-@media (max-width: 800px ) {
-	.nav_bar {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-
-
-/* MEDIA QUERY @ 500PX */
-
-
-
-@media (max-width: 500px) {
-	.nav_bar {
-		display: flex;
-		flex-direction: column-reverse;
-	}
-	.nav_bar .logo {
-	
-	}
-	.topimg {
-		display: none;
-	}
-	.top-content {
-		display: flex;
-		flex-direction:column;
-		justify-content: flex-start;
-	}
-	.top-content .feat {
-		display: flex;
-		justify-content: flex-start;
-	}
-	}
-
-
 
 /* SERVICES STYLING */
 
@@ -365,4 +325,90 @@ footer {
 	margin: 15% 15% 2% 15%;
 }
 
+
+
+
+/* MEDIA QUERY @ 800PX */
+
+
+
+@media (max-width: 800px ) {
+	.nav_bar {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.logo {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+
+
+/* MEDIA QUERY @ 500PX */
+
+
+
+@media (max-width: 500px) {
+	.nav_bar {
+		display: flex;
+		flex-direction: column-reverse;
+	
+	}
+	.nav_bar a {
+		border-bottom: 3px solid black;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 30px;
+		margin-top: 20px;
+
+	}
+
+
+	.topimg {
+		display: none;
+	}
+	.top-content {
+		display: flex;
+		flex-direction:column;
+		justify-content: flex-start;
+	}
+	.top-content .feat {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.top-content .about {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-left: 20px;
+	}
+
+	.bottom-content .services{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.bottom-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.bottom-content .product {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.bottom-content .vision {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	}
 
